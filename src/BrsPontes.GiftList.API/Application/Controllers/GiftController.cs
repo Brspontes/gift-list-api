@@ -22,7 +22,7 @@ namespace BrsPontes.GiftList.API.Application.Controllers
             try
             {
                 await _giftItemService.UserSelectItem(userSelectGiftItemDto);
-                return Ok(Task.CompletedTask);
+                return Ok();
             }
             catch (Exception ex)
             {
